@@ -718,11 +718,19 @@ body.jogos .console-year {
 }
 
 .tags span {
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
     background: #f2f2f2;
     padding: 6px 12px;
     border-radius: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
+}
+
+.tags span img{
+    width:20px;
+    height:20px;
 }
 
 
