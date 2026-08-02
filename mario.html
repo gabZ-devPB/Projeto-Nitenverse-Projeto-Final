@@ -16,7 +16,13 @@
             <img src="imagens/logo.png" alt="Nintenverse">
         </a>
     </div>
-    <nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav id="main-nav">
         <a href="index.html">Home</a>
         <a href="noticias.html">Notícias</a>
         <a class="active" href="jogos.html">Jogos</a>
@@ -99,34 +105,13 @@
     <h2>Tags relacionadas</h2>
 
     <div class="tags">
-        <span>
-            <img src="imagens/icons/plataforma.svg" alt="">
-            Plataforma
-        </span>
-        <span>
-            <img src="imagens/icons/castle.svg" alt="">
-            Reino Cogumelo
-        </span>
-        <span>
-            <img src="imagens/icons/crown.svg" alt="">
-            Princesa Peach
-        </span>
-        <span>
-            <img src="imagens/icons/fire.svg" alt="">
-            Bowser
-        </span>
-        <span>
-            <img src="imagens/icons/star.svg" alt="">
-            Clássico
-        </span>
-        <span>
-            <img src="imagens/icons/console.svg" alt="">
-            NES
-        </span>
-        <span>
-            <img src="imagens/icons/fantasia.svg" alt="">
-            Fantasia
-        </span>
+        <span>🎮 Plataforma</span>
+        <span>🍄 Reino do Cogumelo</span>
+        <span>👑 Princesa Peach</span>
+        <span>🔥 Bowser</span>
+        <span>⭐ Clássico</span>
+        <span>🕹️ NES</span>
+        <span>🏃 Ação</span>
     </div>
 </section>
 
@@ -162,5 +147,6 @@
         Site de fãs não oficial. Nintendo e suas marcas pertencem à Nintendo Co., Ltd.
     </p>
 </footer>
+    <script src="js/menu.js"></script>
 </body>
 </html>

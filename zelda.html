@@ -15,7 +15,13 @@
             <img src="imagens/logo.png" alt="Nintenverse">
         </a>
     </div>
-    <nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav id="main-nav">
         <a href="index.html">Home</a>
         <a href="noticias.html">Notícias</a>
         <a class="active" href="jogos.html">Jogos</a>
@@ -92,34 +98,13 @@
     <h2>Tags relacionadas</h2>
 
     <div class="tags">
-        <span>
-            <img src="imagens/icons/chest.svg" alt="">
-            Aventura
-        </span>
-        <span>
-            <img src="imagens/icons/castle.svg" alt="">
-            Hyrule
-        </span>
-        <span>
-            <img src="imagens/icons/crown.svg" alt="">
-            Princesa Zelda
-        </span>
-        <span>
-            <img src="imagens/icons/triforce.svg" alt="">
-            Triforce
-        </span>
-        <span>
-            <img src="imagens/icons/puzzle.svg" alt="">
-            Explorar
-        </span>
-        <span>
-            <img src="imagens/icons/console.svg" alt="">
-            NES
-        </span>
-        <span>
-            <img src="imagens/icons/fantasia.svg" alt="">
-            Fantasia
-        </span>
+        <span>🗡️ Aventura</span>
+        <span>🏰 Hyrule</span>
+        <span>👑 Princesa Zelda</span>
+        <span>✨ Triforce</span>
+        <span>🧩 Exploração</span>
+        <span>🕹️ NES</span>
+        <span>🐉 Fantasia</span>
     </div>
 </section>
 <footer class="footer">
@@ -154,5 +139,6 @@
         Site de fãs não oficial. Nintendo e suas marcas pertencem à Nintendo Co., Ltd.
     </p>
 </footer>
+    <script src="js/menu.js"></script>
 </body>
 </html>
