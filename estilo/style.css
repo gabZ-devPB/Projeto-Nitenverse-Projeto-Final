@@ -77,6 +77,36 @@ nav a.active {
     box-shadow: 0 5px 15px rgba(214, 69, 65, 0.4);
 }
 
+.card-btn {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 10px 18px;
+    background: #fff;
+    color: #d63d3d;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.card-btn:hover {
+    background: #f5f5f5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,.2);
+}
+
+.card.red .card-btn {
+    color: #d63d3d;
+}
+
+.card.blue .card-btn {
+    color: #4e7d99;
+}
+
+.card.yellow .card-btn {
+    color: #d8a03f;
+}
+
 .menu-toggle {
     display: none;
     flex-direction: column;
