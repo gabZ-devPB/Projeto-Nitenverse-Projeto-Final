@@ -77,6 +77,40 @@ nav a.active {
     box-shadow: 0 5px 15px rgba(214, 69, 65, 0.4);
 }
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1100;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--nintendo-red);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(9.5px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-9.5px) rotate(-45deg);
+}
+
 .hero {
     position: relative;
     overflow: hidden;
@@ -699,30 +733,54 @@ body.jogos .console-year {
     height:20px;
 }
 
+
 @media (max-width: 768px) {
 
     .header {
-        flex-direction: column;
-        gap: 18px;
-        padding: 18px;
-        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        padding: 14px 20px;
+        text-align: left;
+        position: relative;
     }
 
     .logo img {
-        width: 150px;
+        width: 130px;
         height: auto;
     }
 
+    .menu-toggle {
+        display: flex;
+    }
+
     nav {
-        flex-wrap: wrap;
-        justify-content: center;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
         gap: 10px;
+        padding: 15px 20px 20px;
+        background: var(--wiiu-glass);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 4px solid var(--nintendo-red);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    nav.nav-open {
+        display: flex;
     }
 
     nav a {
         margin-left: 0;
         font-size: 13px;
-        padding: 8px 16px;
+        padding: 10px 16px;
+        text-align: center;
     }
 
     .hero {
